@@ -1,6 +1,6 @@
-import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import React from 'react'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
 
 const VRScene = () => (
   <Canvas>
@@ -9,9 +9,9 @@ const VRScene = () => (
     <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
     <mesh position={[0, 0, 0]}>
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="crimson" />
+      <meshStandardMaterial color='crimson' />
     </mesh>
   </Canvas>
-);
+)
 
-export default VRScene;
+export default VRScene
